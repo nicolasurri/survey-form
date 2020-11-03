@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type="text/css">
+    <link href="./style.css" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="container">
+  
+        <h1 id="title">Digital Marketing: Survey Form</h1>
+        
+        <p id="description">Thank you for taking the time to complete this survey</p>
+        
+        <form id="survey-form">
+           
+          <div class="form-input">
+            <label for="name" id="name-label">Name *</label>
+            <input id="name" type="text" placeholder="Enter your name" required/>
+          </div>
+           
+          <div class="form-input">
+            <label for="email" id="email-label">Email *</label>
+            <input id="email" type="email" placeholder="Enter your email" required/>
+          </div>
+          
+          <div class="form-input">
+            <label for="number" id="number-label">Age</label>
+            <input id="number" type="number" placeholder="Enter your age (optional)" min="16" max="99"/>
+          </div>
+          
+          <div class="form-input">
+           <label>Which option best describes your current goals *</label>
+           <select id="dropdown" required>
+             <option value="attract">Attract</option>
+             <option value="convert">Convert</option>
+             <option value="close">Close</option>
+              <option value="delight">Delight</option>
+           </select>
+          </div>
+          
+          <div class="form-input">
+            <label>Would you recommend investing in digital marketing to a friend? *</label>
+            <label><input type="radio" class="radio" name="user-recommend" value="yes">Definitely</input></label>
+            <label><input type="radio" class="radio" name="user-recommend" value="maybe">Maybe</input></label>
+            <label><input type="radio" class="radio" name="user-recommend" value="no">Not Sure</input></label>
+          </div>
+      
+          <div class="form-input">
+            <label>What would you like to see improved? * (Check all that apply)</label>
+            <label><input class="checkbox" type="checkbox" name="user-recommend" value="web">Web Design</input></label>
+            <label><input class="checkbox" type="checkbox" name="user-recommend" value="email marketing">Email Marketing</input></label>
+            <label><input class="checkbox" type="checkbox"  name="user-recommend" value="branding">Branding</input></label>
+          </div>
+      
+          <div class="form-input">
+            <label for="comments">Any additional comment you want to share with us?</label> 
+            <textarea id="comments" placeholder="Your additional comments (optional)"></textarea>
+          </div>
+            
+          <input type="submit"  id="submit"/>
+      
+        </form>
+        
+    </div>
+</body>
+</html>
